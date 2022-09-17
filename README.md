@@ -14,6 +14,10 @@
 * [GitHub Profile Link](#github-profile)
 * [GitHub App Link](#links)
 * [Screenshots](#screenshots)
+* [Empty app visual](#Empty-app-visual)
+* [App with data](#App-with-data)
+* [App with data locally stored](#App-with-data-locally-stored)
+
 
 
 ### Project Description
