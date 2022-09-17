@@ -1,13 +1,29 @@
-# Work_Day_Scheduler
-Work Day Scheduler
+# Work Day Scheduler
 
-# User Story
 
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
+#### Work Day Scheduler  [TheAnswer07](https://github.com/TheAnswer07)
 
-# Acceptance Criteria
+#### Work_Day_Scheduler
+
+## Table of Contents:
+* [Project Description](#project-description)
+* [User Story](#username)
+* [Credits](#credits)
+* [Features](#features)
+* [Contribution](#contribution)
+* [GitHub Profile Link](#github-profile)
+* [GitHub App Link](#links)
+* [Screenshots](#screenshots)
+
+
+### Project Description
+This Work Day Scheduler project has been created as a simple calendar application that allows a user to save events for each hour of a standard work day. 
+
+### User Story
+
+AS AN employee with a busy schedule, I WANT to add important events to a daily planner, SO THAT I can manage my time effectively.
+
+### Acceptance Criteria
 
 GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
@@ -22,3 +38,26 @@ WHEN I click the save button for that time block
 THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
+
+### Credits
+Thanks to my friend Victor for helping me with this project.
+
+### Features
+Full Work Day Scheduler application that allows to input past, current and future activities. 
+It has a specific color for each time state (past, current and future).
+It saves all inputs and render them after refreshing the page.
+It also stores all the iputed data in the local storage.
+
+### Contribution
+You can contribute to this project by accessing my GitHub page.
+
+### GitHub Profile Link
+[GitHub](https://github.com/TheAnswer07)
+
+### Links
+[GitHub App Link](https://github.com/TheAnswer07)
+
+### Screenshots
+![screenshots](N/A "Project Screenshot")
+
+
