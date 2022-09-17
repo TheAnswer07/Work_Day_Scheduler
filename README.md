@@ -40,7 +40,8 @@ WHEN I refresh the page
 THEN the saved events persist
 
 ### Credits
-Thanks to my friend Victor for helping me with this project.
+Thanks to The Coding Bootcamp Repositories for Boot Camp Curriculum Lesson Plans (Xandromus) for the Starter Code 
+and Michael Scharfas (2017mike) for all the considerable support connected with building this app.
 
 ### Features
 Full Work Day Scheduler application that allows to input past, current and future activities. 
@@ -55,9 +56,9 @@ You can contribute to this project by accessing my GitHub page.
 [GitHub](https://github.com/TheAnswer07)
 
 ### Links
-[GitHub App Link](https://github.com/TheAnswer07)
+[GitHub App Link](https://theanswer07.github.io/Work_Day_Scheduler/)
 
 ### Screenshots
-![screenshots](N/A "Project Screenshot")
+![screenshots]("Project Screenshot")
 
 
