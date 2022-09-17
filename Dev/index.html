@@ -23,7 +23,7 @@
         </header>
         <div class="container">
 
-            <div id="9hour" class="row time-block">
+            <div id="8hour" class="row time-block">
                 <div class="col-md-1 hour">8:00 am</div>
                 <textarea id="text8" class="col-md-10 description"></textarea>
                 <button id="btn8" class="btn col-md-1 saveBtn">Save</button>
@@ -35,6 +35,48 @@
                 <button id="btn9" class="btn col-md-1 saveBtn">Save</button>
             </div>
 
+            
+            <div id="10hour" class="row time-block">
+                <div class="col-md-1 hour">10:00 am</div>
+                <textarea id="text10" class="col-md-10 description"></textarea>
+                <button id="btn10" class="btn col-md-1 saveBtn">Save</button>
+            </div>
+
+            <div id="11hour" class="row time-block">
+                <div class="col-md-1 hour">11:00 am</div>
+                <textarea id="text11" class="col-md-10 description"></textarea>
+                <button id="btn11" class="btn col-md-1 saveBtn">Save</button>
+            </div>
+
+            <div id="12hour" class="row time-block">
+                <div class="col-md-1 hour">12:00 am</div>
+                <textarea id="text12" class="col-md-10 description"></textarea>
+                <button id="btn12" class="btn col-md-1 saveBtn">Save</button>
+            </div>
+
+            <div id="13hour" class="row time-block">
+                <div class="col-md-1 hour">13:00 pm</div>
+                <textarea id="text13" class="col-md-10 description"></textarea>
+                <button id="btn13" class="btn col-md-1 saveBtn">Save</button>
+            </div>
+
+            <div id="14hour" class="row time-block">
+                <div class="col-md-1 hour">14:00 pm</div>
+                <textarea id="text14" class="col-md-10 description"></textarea>
+                <button id="btn14" class="btn col-md-1 saveBtn">Save</button>
+            </div>
+
+            <div id="15hour" class="row time-block">
+                <div class="col-md-1 hour">15:00 pm</div>
+                <textarea id="text15" class="col-md-10 description"></textarea>
+                <button id="btn15" class="btn col-md-1 saveBtn">Save</button>
+            </div>
+
+            <div id="16hour" class="row time-block">
+                <div class="col-md-1 hour">16:00 pm</div>
+                <textarea id="text16" class="col-md-10 description"></textarea>
+                <button id="btn16" class="btn col-md-1 saveBtn">Save</button>
+            </div>
 
 
         </div>
@@ -44,6 +86,19 @@
         <script>
             $(document).ready(function () {
 
+                var t = moment();
+                console.log(t);
+                
+                t.format();
+                let currentDay = t._d;
+
+                console.log(currentDay);
+
+                // let currentTime = moment().hours();
+
+                let currentTime = 10;
+
+
                 $('#text8').val(localStorage.getItem('text8'))
                 
                 $('#btn8').on('click', function () {
@@ -51,14 +106,171 @@
                 });
 
 
-
                 $('#text9').val(localStorage.getItem('text9'))
                 
                 $('#btn9').on('click', function () {
                     localStorage.setItem('text9', $('#text9').val())
                 });
+
+
+                $('#text10').val(localStorage.getItem('text10'))
                 
-                console.log("ready!");
+                $('#btn10').on('click', function () {
+                    localStorage.setItem('text10', $('#text10').val())
+                });
+                
+
+                $('#text11').val(localStorage.getItem('text11'))
+                
+                $('#btn11').on('click', function () {
+                    localStorage.setItem('text11', $('#text11').val())
+                });
+
+
+                $('#text12').val(localStorage.getItem('text12'))
+                
+                $('#btn12').on('click', function () {
+                    localStorage.setItem('text12', $('#text12').val())
+                });
+                
+
+                $('#text13').val(localStorage.getItem('text1'))
+                
+                $('#btn13').on('click', function () {
+                    localStorage.setItem('text13', $('#text13').val())
+                });
+
+
+                $('#text14').val(localStorage.getItem('text14'))
+                
+                $('#btn14').on('click', function () {
+                    localStorage.setItem('text14', $('#text14').val())
+                });
+                
+
+                $('#text15').val(localStorage.getItem('text15'))
+                
+                $('#btn15').on('click', function () {
+                    localStorage.setItem('text15', $('#text15').val())
+                });
+
+
+                $('#text16').val(localStorage.getItem('text16'))
+                
+                $('#btn16').on('click', function () {
+                    localStorage.setItem('text16', $('#text16').val())
+                });
+                
+
+                if (currentTime < 8) {
+                    $('#8hour').addClass('future')
+                    $('#9hour').addClass('future')
+                    $('#10hour').addClass('future')
+                    $('#11hour').addClass('future')
+                    $('#12hour').addClass('future')
+                    $('#13hour').addClass('future')
+                    $('#14hour').addClass('future')
+                    $('#15hour').addClass('future')
+                    $('#16hour').addClass('future')
+                }
+
+                if (currentTime === 9) {
+                    $('#8hour').addClass('past')
+                    $('#9hour').addClass('present')
+                    $('#10hour').addClass('future')
+                    $('#11hour').addClass('future')
+                    $('#12hour').addClass('future')
+                    $('#13hour').addClass('future')
+                    $('#14hour').addClass('future')
+                    $('#15hour').addClass('future')
+                    $('#16hour').addClass('future')
+                }
+
+                if (currentTime === 10) {
+                    $('#8hour').addClass('past')
+                    $('#9hour').addClass('past')
+                    $('#10hour').addClass('present')
+                    $('#11hour').addClass('future')
+                    $('#12hour').addClass('future')
+                    $('#13hour').addClass('future')
+                    $('#14hour').addClass('future')
+                    $('#15hour').addClass('future')
+                    $('#16hour').addClass('future')
+                }
+
+                if (currentTime === 11) {
+                    $('#8hour').addClass('past')
+                    $('#9hour').addClass('past')
+                    $('#10hour').addClass('past')
+                    $('#11hour').addClass('present')
+                    $('#12hour').addClass('future')
+                    $('#13hour').addClass('future')
+                    $('#14hour').addClass('future')
+                    $('#15hour').addClass('future')
+                    $('#16hour').addClass('future')
+                }
+
+                if (currentTime === 12) {
+                    $('#8hour').addClass('past')
+                    $('#9hour').addClass('past')
+                    $('#10hour').addClass('past')
+                    $('#11hour').addClass('past')
+                    $('#12hour').addClass('present')
+                    $('#13hour').addClass('future')
+                    $('#14hour').addClass('future')
+                    $('#15hour').addClass('future')
+                    $('#16hour').addClass('future')
+                }
+
+                if (currentTime === 13) {
+                    $('#8hour').addClass('past')
+                    $('#9hour').addClass('past')
+                    $('#10hour').addClass('past')
+                    $('#11hour').addClass('past')
+                    $('#12hour').addClass('past')
+                    $('#13hour').addClass('present')
+                    $('#14hour').addClass('future')
+                    $('#15hour').addClass('future')
+                    $('#16hour').addClass('future')
+                }
+
+                if (currentTime === 14) {
+                    $('#8hour').addClass('past')
+                    $('#9hour').addClass('past')
+                    $('#10hour').addClass('past')
+                    $('#11hour').addClass('past')
+                    $('#12hour').addClass('past')
+                    $('#13hour').addClass('past')
+                    $('#14hour').addClass('present')
+                    $('#15hour').addClass('future')
+                    $('#16hour').addClass('future')
+                }
+
+                if (currentTime === 15) {
+                    $('#8hour').addClass('past')
+                    $('#9hour').addClass('past')
+                    $('#10hour').addClass('past')
+                    $('#11hour').addClass('past')
+                    $('#12hour').addClass('past')
+                    $('#13hour').addClass('past')
+                    $('#14hour').addClass('past')
+                    $('#15hour').addClass('present')
+                    $('#16hour').addClass('future')
+                }
+
+                if (currentTime === 16) {
+                    $('#8hour').addClass('past')
+                    $('#9hour').addClass('past')
+                    $('#10hour').addClass('past')
+                    $('#11hour').addClass('past')
+                    $('#12hour').addClass('past')
+                    $('#13hour').addClass('past')
+                    $('#14hour').addClass('past')
+                    $('#15hour').addClass('past')
+                    $('#16hour').addClass('present')
+                }
+
+
             });
         </script>
     </body>
