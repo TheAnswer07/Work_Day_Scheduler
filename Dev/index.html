@@ -87,12 +87,14 @@
             $(document).ready(function () {
 
                 var t = moment();
-                console.log(t);
+                // console.log(t);
                 
                 t.format();
                 let currentDay = t._d;
 
-                console.log(currentDay);
+                // console.log(currentDay);
+
+                $('#currentDay').text(currentDay);
 
                 // let currentTime = moment().hours();
 
