@@ -59,6 +59,10 @@ You can contribute to this project by accessing my GitHub page.
 [GitHub App Link](https://theanswer07.github.io/Work_Day_Scheduler/)
 
 ### Screenshots
-![screenshots]("Project Screenshot")
+![Empty app visual](/Dev/screenshots/Empty%20app%20visual.png "Empty app visual")
+
+![App with data](/Dev/screenshots/App%20with%20data.png "App with data")
+
+![App with data locally stored](/Dev/screenshots/App%20with%20data%20locally%20stored.png "App with data locally stored")
 
 
